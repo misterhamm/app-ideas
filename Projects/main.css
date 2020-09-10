@@ -1,0 +1,20 @@
+body {
+  background-color: #F8F8F8;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.project-box {
+  width: 700px;
+  margin: 200px auto 0 auto;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+  min-height: 500px;
+  padding: 30px;
+}
+
+.notice-me-senpai {
+  font-size: 48px;
+  color: #189ad3;
+}
