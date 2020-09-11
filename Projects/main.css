@@ -18,3 +18,22 @@ body {
   font-size: 48px;
   color: #189ad3;
 }
+
+/* Input Grid */
+.input-grid {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.input-grid .input-container {
+  flex: 0 1 50%;
+}
+
+.input-grid .input-container:nth-last-child(n+3) {
+  margin-bottom: 20px;
+}
+
+.input-grid .input-container label {
+  display: block;
+}

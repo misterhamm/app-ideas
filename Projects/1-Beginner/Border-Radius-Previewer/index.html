@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Border Radius Previewer</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../main.css">
+</head>
+
+<body>
+
+  <div class="project-box">
+    <h1>See what your border radii look like</h1>
+    <p>put a value in each input. try 'em out</p>
+    
+    <div class="input-grid">
+      <div class="input-container">
+        <label for="tl">Top Left</label>
+        <input id="tl" type="text" class="basic-input">
+      </div>
+
+      <div class="input-container">
+        <label for="tr">Top Right</label>
+        <input id="tr" type="text" class="basic-input">
+      </div>
+      <div class="input-container">
+        <label for="br">Bottom Right</label>
+        <input id="br" type="text" class="basic-input">
+      </div>
+      <div class="input-container">
+        <label for="bl">Bottom Left</label>
+        <input id="bl" type="text" class="basic-input">
+      </div>
+    </div>
+
+    <span>Advanced</span>
+    <div id="advanced">
+      <h2>Horizontal Radii</h2>
+      <div class="input-grid">
+        <div class="input-container">
+          <label for="hrtl">Top Left</label>
+          <input id="hrtl" type="text" class="advanced-input">
+        </div>
+  
+        <div class="input-container">
+          <label for="hrtr">Top Right</label>
+          <input id="hrtr" type="text" class="advanced-input">
+        </div>
+        <div class="input-container">
+          <label for="hrbr">Bottom Right</label>
+          <input id="hrbr" type="text" class="advanced-input">
+        </div>
+        <div class="input-container">
+          <label for="hrbl">Bottom Left</label>
+          <input id="hrbl" type="text" class="advanced-input">
+        </div>
+      </div>
+      <h2>Vertical Radii</h2>
+      <div class="input-grid">
+        <div class="input-container">
+          <label for="vrtl">Top Left</label>
+          <input id="vrtl" type="text" class="advanced-input">
+        </div>
+  
+        <div class="input-container">
+          <label for="vrtr">Top Right</label>
+          <input id="vrtr" type="text" class="advanced-input">
+        </div>
+        <div class="input-container">
+          <label for="vrbr">Bottom Right</label>
+          <input id="vrbr" type="text" class="advanced-input">
+        </div>
+        <div class="input-container">
+          <label for="vrbl">Bottom Left</label>
+          <input id="vrbl" type="text" class="advanced-input">
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div id="radius-box">Change me!</div>
+  </div>
+
+
+  <style>
+    #radius-box {
+      height: 300px;
+      width: 300px;
+      background-color: #BADA55;
+      margin: 40px auto 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: border-radius 0.3s ease-in-out;
+
+      border-radius: 15px 20px 25px 30px / 10px 5px 10px 5px;
+    }
+
+    .input-grid {
+      width: 70%;
+      margin: 0 auto;
+    }
+  </style>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
