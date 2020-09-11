@@ -15,67 +15,70 @@
   <div class="project-box">
     <h1>See what your border radii look like</h1>
     <p>put a value in each input. try 'em out</p>
-    
+
     <div class="input-grid">
       <div class="input-container">
         <label for="tl">Top Left</label>
-        <input id="tl" type="text" class="basic-input">
+        <input id="tl" type="text" class="basic-input" value="0">
       </div>
 
       <div class="input-container">
         <label for="tr">Top Right</label>
-        <input id="tr" type="text" class="basic-input">
+        <input id="tr" type="text" class="basic-input" value="0">
       </div>
       <div class="input-container">
         <label for="br">Bottom Right</label>
-        <input id="br" type="text" class="basic-input">
+        <input id="br" type="text" class="basic-input" value="0">
       </div>
       <div class="input-container">
         <label for="bl">Bottom Left</label>
-        <input id="bl" type="text" class="basic-input">
+        <input id="bl" type="text" class="basic-input" value="0">
       </div>
     </div>
+    <br>
+    <br>
+    <p>Want more? Try advanced mode.</p><button id="show-adv">Go</button>
 
-    <span>Advanced</span>
+
     <div id="advanced">
       <h2>Horizontal Radii</h2>
       <div class="input-grid">
         <div class="input-container">
           <label for="hrtl">Top Left</label>
-          <input id="hrtl" type="text" class="advanced-input">
+          <input id="hrtl" type="text" class="advanced-input" value="0">
         </div>
-  
+
         <div class="input-container">
           <label for="hrtr">Top Right</label>
-          <input id="hrtr" type="text" class="advanced-input">
-        </div>
-        <div class="input-container">
-          <label for="hrbr">Bottom Right</label>
-          <input id="hrbr" type="text" class="advanced-input">
+          <input id="hrtr" type="text" class="advanced-input" value="0">
         </div>
         <div class="input-container">
           <label for="hrbl">Bottom Left</label>
-          <input id="hrbl" type="text" class="advanced-input">
+          <input id="hrbl" type="text" class="advanced-input" value="0">
+        </div>
+        <div class="input-container">
+          <label for="hrbr">Bottom Right</label>
+          <input id="hrbr" type="text" class="advanced-input" value="0">
         </div>
       </div>
       <h2>Vertical Radii</h2>
       <div class="input-grid">
         <div class="input-container">
           <label for="vrtl">Top Left</label>
-          <input id="vrtl" type="text" class="advanced-input">
+          <input id="vrtl" type="text" class="advanced-input" value="0">
         </div>
-  
+
         <div class="input-container">
           <label for="vrtr">Top Right</label>
-          <input id="vrtr" type="text" class="advanced-input">
-        </div>
-        <div class="input-container">
-          <label for="vrbr">Bottom Right</label>
-          <input id="vrbr" type="text" class="advanced-input">
+          <input id="vrtr" type="text" class="advanced-input" value="0">
         </div>
         <div class="input-container">
           <label for="vrbl">Bottom Left</label>
-          <input id="vrbl" type="text" class="advanced-input">
+          <input id="vrbl" type="text" class="advanced-input" value="0">
+        </div>
+        <div class="input-container">
+          <label for="vrbr">Bottom Right</label>
+          <input id="vrbr" type="text" class="advanced-input" value="0">
         </div>
       </div>
     </div>
@@ -83,8 +86,10 @@
 
 
 
-
-    <div id="radius-box">Change me!</div>
+    <div class="result-box">
+      <div id="radius-box">Change me!</div>
+      <p id="css-output" class="code">border-radius: 0px;</p>
+    </div>
   </div>
 
 
@@ -93,18 +98,34 @@
       height: 300px;
       width: 300px;
       background-color: #BADA55;
-      margin: 40px auto 0 auto;
       display: flex;
       justify-content: center;
       align-items: center;
       transition: border-radius 0.3s ease-in-out;
+    }
 
-      border-radius: 15px 20px 25px 30px / 10px 5px 10px 5px;
+    .result-box {
+      position: fixed;
+      right: 100px;
+      top: 100px;
     }
 
     .input-grid {
       width: 70%;
       margin: 0 auto;
+    }
+
+    #advanced {
+      display: none;
+    }
+
+    .project-box {
+      margin-top: 100px;
+      min-height: auto;
+    }
+
+    h2 {
+      margin-top: 40px;
     }
   </style>
 
