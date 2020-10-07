@@ -56,3 +56,13 @@ body {
     display: block;
     word-wrap: break-word;
 }
+
+#copy-confirm {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
